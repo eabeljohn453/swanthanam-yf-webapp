@@ -1,21 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Web Project</title>
+    <link href="index.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>Youth Festival Registration</title>
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Project</h1>
+    <header class="hero">
+        <!-- Navigation bar -->
+        <nav class="navbar">
+            <div class="container">
+                <h1 class="logo">YouthFest</h1>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Register</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Hero content -->
+        <div class="hero-content">
+            <h2>Welcome to</h2>
+            <h1>Youth Festival 2023</h1>
+            <p>Join us for a weekend of music, art, and fun!</p>
+        </div>
     </header>
-    <main>
-        <p>This is a simple static web project.</p>
-    </main>
-    <footer>
-        <p>&copy; 2023 Your Name</p>
+
+    <div class="righthead">
+        <h1>Sign in</h1>
+        <form action="">
+            <table class="right-head">
+                <tr>
+                    <td>email or mobile</td>
+                    <td>password</td>
+                </tr>
+                <tr>
+                    <td><input type="text" style="height: 30px;" required></td>
+                    <td><input type="text" style="height: 30px;" required></td>
+                    <td><input class="subcol" type="submit" value="log in"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><a class="rcolor" href forgotten.html>forgotten account</a></td>
+                </tr>
+            </table>
+        </form>
+    </div><br>
+    <!-- Registration form -->
+
+    <section class="signup">
+        <div class="container">
+            <h2>Sign Up</h2>
+            <form id="signup-form" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" style="width: 200px;" required> <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required style="width: 200px;"> <br>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" style="width: 200px;" required> <br>
+
+                <label for="address">Address:</label>
+                <input type="address" id="address" name="address" class="age-input" style="width: 200px;" required> <br>
+                <form action="/action_page.php">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" style="width: 200px;" required> <br>
+
+                </form>
+
+
+
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label class="radio-label"> Male<br><input type="radio" name="gender" value="male" required></label>
+                    <label class="radio-label"> Female<br><input type="radio" name="gender" value="female"
+                            required></label>
+                </div><br>
+                <label for="events">Select Events:</label><br>
+                <select id="events" name="events[]" multiple required>
+                    <option value="event1">Music Concert</option>
+                    <option value="event2">Art Exhibition</option>
+                    <option value="event3">Dance Performance</option>
+                    <option value="event4">Theater Show</option>
+                    <!-- Add more event options as needed -->
+                </select><br>
+
+                <button type="submit" class="btn" required>Register & Pay</button>
+
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2023 YouthFest. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>

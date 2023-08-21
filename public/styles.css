@@ -1,29 +1,194 @@
-/* Reset some default styles */
-body, h1, p {
+/* Reset default styles */
+body, h1, h2, h3, p, label, input, select, button {
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
-/* Basic styling */
+/* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    height: 100%; /* You can remove this line if not needed */
+    width: 100%; /* You can remove this line if not needed */
 }
 
-header {
-    background-color: #333;
-    color: white;
+
+.container {
+    max-width: 1300px;
+   
+    margin: 0 auto;
+    padding: 0 px;
+    
+}
+
+/* Header styles */
+.hero {
+    background: url('hero-bg.jpg') center/cover no-repeat;
+    color: black;
     text-align: center;
-    padding: 1rem;
+    padding: 150px 0;
 }
 
-main {
-    padding: 2rem;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
-footer {
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black
+    text-decoration= none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00aeff;
+}
+.righthead{/*sign in*/
+    padding-left:600px;
+    width:50%;
+    font-size: 20px;
+    float:left;
+}
+
+
+
+.gender-options {
+    display: flex;
+ 
+    margin-right: 10px;
+}
+
+.gender-options .radio-label {
+    display: flex;
+   
+    margin-right: 20px;
+}
+
+.gender-options input[type="radio"] {
+    margin-right: 10px;
+}
+
+.right-head{
+    color:black;
+}
+.rcolor{
+    color:red;
+}
+.subcol{
+    float:left;
+    background:rgb(10, 57, 96);
+    color:white;
+    font-weight:10px;
+    width:50px;
+    height: 30px;
+}
+.subcol:hover{
+    background:red;
+}
+/* Hero content styles */
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.age-input {
+    width: 20px; 
+}
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ffa500;
+}
+
+/* Registration form styles */
+.signup {
+    padding: 10px ;
+}
+
+.signup h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#signup-form {
+    max-width: 400px;
+    margin-left:0px;
+}
+
+#signup-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+#signup-form input,
+#signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#signup-form select {
+    height: auto;
+}
+
+#signup-form button {
+    display: block;
+    background: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#signup-form button:hover {
+    background: #ffa500;
+}
+
+/* Footer styles */
+.footer {
+    background: #000;
+    color: #fff;
+    
     text-align: center;
-    padding: 1rem;
-    background-color: #333;
-    color: white;
+    padding: 20px 0;
 }
